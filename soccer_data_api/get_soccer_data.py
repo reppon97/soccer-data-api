@@ -25,7 +25,7 @@ class GetData:
     def get_club_name(self):
         raw_response = self.soup.find_all('td', {'class': 'left'})
         for pos in raw_response:
-            self.array.append(pos.get_text())
+            self.array.append(pos.get_text()[1:])
         self.clubs += self.array
         if self.league == "comps/20/Bundesliga-Stats":
 

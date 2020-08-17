@@ -27,8 +27,6 @@ class SoccerDataAPI:
         
         return response
 
-        return response
-
     def bundesliga(self):
         self.get_data = GetData(CONF['leagues']['bundesliga'])
         response = json_response(self.get_data.get_club_name(), self.get_data.get_points(),
