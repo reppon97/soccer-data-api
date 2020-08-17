@@ -27,11 +27,12 @@ def response_decorator(team, points, matches_played):
     return response
 
 
-def json_response(team, points, matches_played, wins, draws, losses, goals_for, goals_against, goal_diff, top_scorer):
+def json_response(team, pos, points, matches_played, wins, draws, losses, goals_for, goals_against, goal_diff, top_scorer):
     raw_response = []
     for i in range(0, len(team)):
         raw_response.append({
             "team": team[i],
+            "pos": pos[i],
             "points": points[i],
             "matches_played": matches_played[i],
             "wins": wins[i],

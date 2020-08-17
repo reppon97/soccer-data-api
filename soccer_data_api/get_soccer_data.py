@@ -5,11 +5,44 @@ from time import sleep
 
 
 class GetData:
+    """
+    A class that gets data/stats from the https://www.sports-reference.com/
+    ...
+    Attributes
+    ----------
+    league: str
+        Bundesliga has only 18 teams instead of 20. So there is if statement to check if it is a Bundesliga
+        to return 18 team stats.
+
+    Methods
+    ----------
+    get_club_name: Gets name of the team. "[1:]" in "self.array.append(pos.get_text()[1:])" is to get rid of
+    the whitespace that method returns.
+
+    get_points: Simply, it's a method that gets the points.
+
+    get_matches_played: Gets the number of matches they played.
+
+    get_wins: Gets the number of wins.
+
+    get_draws: Gets the number of draws.
+
+    get_losses: Gets the number of losses.
+
+    get_goals_for: Gets the number of scored goals.
+
+    get_goals_against: Gets the number of conceded goals.
+
+    get_goal_diff: Gets the difference of get_goals_for and get_goals_against.
+
+    get_top_scorer: Gets the name of the team's top scorer.
+    """
     def __init__(self, league):
         page = requests.get(CONF['url']+league)
         self.soup = BeautifulSoup(page.content, features="html.parser")
         self.league = ""
         self.array = []
+        self.pos = []
         self.clubs = []
         self.points = []
         self.games = []
@@ -22,10 +55,21 @@ class GetData:
         self.top_scorer = []
         self.league = league
 
+    def get_position(self):
+        raw_response = self.soup.find_all('th', {'data-stat': 'rank'})
+        for pos in raw_response:
+            self.array.append(pos.get_text())
+        self.pos += self.array
+        if self.league == "comps/20/Bundesliga-Stats":
+
+            return self.pos[-18:]
+
+        return self.pos[-20:]
+
     def get_club_name(self):
         raw_response = self.soup.find_all('td', {'class': 'left'})
-        for pos in raw_response:
-            self.array.append(pos.get_text()[1:])
+        for team in raw_response:
+            self.array.append(team.get_text()[1:])
         self.clubs += self.array
         if self.league == "comps/20/Bundesliga-Stats":
 
