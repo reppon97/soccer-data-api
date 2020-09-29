@@ -1,6 +1,6 @@
 from bs4 import BeautifulSoup
 import requests
-from .config import CONF
+from config import CONF
 from time import sleep
 
 

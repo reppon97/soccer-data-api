@@ -1,6 +1,6 @@
-from .config import CONF
-from .response_types import json_response
-from .get_soccer_data import GetData
+from config import CONF
+from response_types import json_response
+from get_soccer_data import GetData
 
 
 class SoccerDataAPI:
@@ -65,6 +65,3 @@ class SoccerDataAPI:
                                  self.get_data.get_goal_diff(), self.get_data.get_top_scorer())
 
         return response
-
-soccer_data = SoccerDataAPI()
-print(soccer_data.la_liga())

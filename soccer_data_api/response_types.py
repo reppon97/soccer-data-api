@@ -18,6 +18,7 @@ def json_response(team, pos, points, matches_played, wins, draws, losses, goals_
             "top_scorer": top_scorer[i]
         })
 
-    response = json.dumps(raw_response, ensure_ascii=False).encode('utf-8')
+    json_str = json.dumps(raw_response, ensure_ascii=False).encode('utf-8')
+    json_list = json.loads(json_str.decode())
 
-    return response.decode()
+    return json_list
