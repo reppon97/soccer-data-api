@@ -1,6 +1,6 @@
 from bs4 import BeautifulSoup
 import requests
-from config import CONF
+from soccer_data_api.config import CONF
 from time import sleep
 
 

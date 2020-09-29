@@ -1,6 +1,6 @@
-from config import CONF
-from response_types import json_response
-from get_soccer_data import GetData
+from soccer_data_api.config import CONF
+from soccer_data_api.response_types import json_response
+from soccer_data_api.get_soccer_data import GetData
 
 
 class SoccerDataAPI:
