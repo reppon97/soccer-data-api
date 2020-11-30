@@ -68,7 +68,3 @@ class SoccerDataAPI:
                                  self.get_data.get_goal_diff(), self.get_data.get_top_scorer())
 
         return response
-
-
-soccer = SoccerDataAPI()
-print(soccer.english_premier())
