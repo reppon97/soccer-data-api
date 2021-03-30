@@ -90,3 +90,14 @@ class SoccerDataAPI:
                                  self.get_data.get_goal_diff(), self.get_data.get_top_scorer())
 
         return response
+
+    def english_championship(self):
+        self.get_data = GetData(CONF['leagues']['english_championship'])
+        response = json_response(self.get_data.get_club_name(), self.get_data.get_position(),
+                                 self.get_data.get_points(),
+                                 self.get_data.get_matches_played(), self.get_data.get_wins(),
+                                 self.get_data.get_draws(), self.get_data.get_losses(),
+                                 self.get_data.get_goals_for(), self.get_data.get_goals_against(),
+                                 self.get_data.get_goal_diff(), self.get_data.get_top_scorer())
+
+        return response
