@@ -63,6 +63,9 @@ class GetData:
         if self.league == "comps/20/Bundesliga-Stats" or self.league == "comps/23/Dutch-Eredivisie-Stats":
 
             return self.pos[-18:]
+        elif self.league == "comps/30/Russian-Premier-League-Stats":
+
+            return self.pos[-16:]
 
         return self.pos[-20:]
 
@@ -74,6 +77,9 @@ class GetData:
         if self.league == "comps/20/Bundesliga-Stats" or self.league == "comps/23/Dutch-Eredivisie-Stats":
 
             return self.clubs[-18:]
+        elif self.league == "comps/30/Russian-Premier-League-Stats":
+
+            return self.clubs[-16:]
 
         return self.clubs[-20:]
 
@@ -84,6 +90,9 @@ class GetData:
         self.points += self.array
         if self.league == "comps/20/Bundesliga-Stats" or self.league == "comps/23/Dutch-Eredivisie-Stats":
             return self.points[-18:]
+        elif self.league == "comps/30/Russian-Premier-League-Stats":
+
+            return self.points[-16:]
 
         return self.points[-20:]
 
@@ -94,6 +103,9 @@ class GetData:
         self.games += self.array
         if self.league == "comps/20/Bundesliga-Stats" or self.league == "comps/23/Dutch-Eredivisie-Stats":
             return self.games[-18:]
+        elif self.league == "comps/30/Russian-Premier-League-Stats":
+
+            return self.games[-16:]
 
         return self.games[-20:]
 
@@ -104,6 +116,9 @@ class GetData:
         self.wins += self.array
         if self.league == "comps/20/Bundesliga-Stats" or self.league == "comps/23/Dutch-Eredivisie-Stats":
             return self.wins[-18:]
+        elif self.league == "comps/30/Russian-Premier-League-Stats":
+
+            return self.wins[-16:]
 
         return self.wins[-20:]
 
@@ -114,6 +129,9 @@ class GetData:
         self.draws += self.array
         if self.league == "comps/20/Bundesliga-Stats" or self.league == "comps/23/Dutch-Eredivisie-Stats":
             return self.draws[-18:]
+        elif self.league == "comps/30/Russian-Premier-League-Stats":
+
+            return self.draws[-16:]
 
         return self.draws[-20:]
 
@@ -124,6 +142,9 @@ class GetData:
         self.losses += self.array
         if self.league == "comps/20/Bundesliga-Stats" or self.league == "comps/23/Dutch-Eredivisie-Stats":
             return self.losses[-18:]
+        elif self.league == "comps/30/Russian-Premier-League-Stats":
+
+            return self.losses[-16:]
 
         return self.losses[-20:]
 
@@ -134,6 +155,9 @@ class GetData:
         self.goals_for += self.array
         if self.league == "comps/20/Bundesliga-Stats" or self.league == "comps/23/Dutch-Eredivisie-Stats":
             return self.goals_for[-18:]
+        elif self.league == "comps/30/Russian-Premier-League-Stats":
+
+            return self.goals_for[-16:]
 
         return self.goals_for[-20:]
 
@@ -144,6 +168,9 @@ class GetData:
         self.goals_against += self.array
         if self.league == "comps/20/Bundesliga-Stats" or self.league == "comps/23/Dutch-Eredivisie-Stats":
             return self.goals_against[-18:]
+        elif self.league == "comps/30/Russian-Premier-League-Stats":
+
+            return self.goals_against[-16:]
 
         return self.goals_against[-20:]
 
@@ -154,6 +181,9 @@ class GetData:
         self.goal_diff += self.array
         if self.league == "comps/20/Bundesliga-Stats" or self.league == "comps/23/Dutch-Eredivisie-Stats":
             return self.goal_diff[-18:]
+        elif self.league == "comps/30/Russian-Premier-League-Stats":
+
+            return self.goal_diff[-16:]
 
         return self.goal_diff[-20:]
 
@@ -164,5 +194,8 @@ class GetData:
         self.top_scorer += self.array
         if self.league == "comps/20/Bundesliga-Stats" or self.league == "comps/23/Dutch-Eredivisie-Stats":
             return self.top_scorer[-18:]
+        elif self.league == "comps/30/Russian-Premier-League-Stats":
+
+            return self.top_scorer[-16:]
 
         return self.top_scorer[-20:]
