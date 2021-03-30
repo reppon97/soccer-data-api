@@ -1,6 +1,6 @@
 # soccer-data-api
 
-A Python web-scrap package to get json soccer data/stats. All data belongs to https://www.sports-reference.com/
+An easy to use python web-scrap package that gets json soccer data/stats. All data belongs to https://www.sports-reference.com/
 
 ## Installation
 
@@ -22,6 +22,7 @@ pip3 install soccer-data-api
 >>>soccer_data.ligue_1()
 >>>soccer_data.bundesliga()
 >>>soccer_data.serie_a()
+>>>soccer_data.eredivisie()
 ```
 
 Leagues available: English Premier League, Spanish La Liga, French Ligue 1, German Bundesliga, Italian Serie A

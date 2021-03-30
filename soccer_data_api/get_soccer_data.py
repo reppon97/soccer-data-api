@@ -78,7 +78,6 @@ class GetData:
         return self.clubs[-20:]
 
     def get_points(self):
-        sleep(.25)
         raw_response = self.soup.find_all('td', {'data-stat': 'points'})
         for points in raw_response:
             self.array.append(points.get_text())
@@ -89,7 +88,6 @@ class GetData:
         return self.points[-20:]
 
     def get_matches_played(self):
-        sleep(.5)
         raw_response = self.soup.find_all('td', {'data-stat': 'games'})
         for games in raw_response:
             self.array.append(games.get_text())
@@ -100,7 +98,6 @@ class GetData:
         return self.games[-20:]
 
     def get_wins(self):
-        sleep(.75)
         raw_response = self.soup.find_all('td', {'data-stat': 'wins'})
         for wins in raw_response:
             self.array.append(wins.get_text())
@@ -111,7 +108,6 @@ class GetData:
         return self.wins[-20:]
 
     def get_draws(self):
-        sleep(1)
         raw_response = self.soup.find_all('td', {'data-stat': 'draws'})
         for draws in raw_response:
             self.array.append(draws.get_text())

@@ -4,3 +4,4 @@ __pycache__
 build/
 dist/
 soccer_data_api.egg-info
+test.py
