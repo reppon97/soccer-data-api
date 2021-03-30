@@ -27,4 +27,4 @@ pip3 install soccer-data-api
 >>>soccer_data.english_championship()
 ```
 
-Leagues available: English Premier League, Spanish La Liga, French Ligue 1, German Bundesliga, Italian Serie A
+Leagues available: English Premier League, Spanish La Liga, French Ligue 1, German Bundesliga, Italian Serie A, Dutch Eredivisie, Russian Premier League, English Championship. 
