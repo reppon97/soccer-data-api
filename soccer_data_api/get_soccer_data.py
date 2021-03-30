@@ -60,7 +60,7 @@ class GetData:
         for pos in raw_response:
             self.array.append(pos.get_text())
         self.pos += self.array
-        if self.league == "comps/20/Bundesliga-Stats":
+        if self.league == "comps/20/Bundesliga-Stats" or self.league == "comps/23/Dutch-Eredivisie-Stats":
 
             return self.pos[-18:]
 
@@ -71,7 +71,7 @@ class GetData:
         for team in raw_response:
             self.array.append(team.get_text()[1:])
         self.clubs += self.array
-        if self.league == "comps/20/Bundesliga-Stats":
+        if self.league == "comps/20/Bundesliga-Stats" or self.league == "comps/23/Dutch-Eredivisie-Stats":
 
             return self.clubs[-18:]
 
@@ -82,7 +82,7 @@ class GetData:
         for points in raw_response:
             self.array.append(points.get_text())
         self.points += self.array
-        if self.league == "comps/20/Bundesliga-Stats":
+        if self.league == "comps/20/Bundesliga-Stats" or self.league == "comps/23/Dutch-Eredivisie-Stats":
             return self.points[-18:]
 
         return self.points[-20:]
@@ -92,7 +92,7 @@ class GetData:
         for games in raw_response:
             self.array.append(games.get_text())
         self.games += self.array
-        if self.league == "comps/20/Bundesliga-Stats":
+        if self.league == "comps/20/Bundesliga-Stats" or self.league == "comps/23/Dutch-Eredivisie-Stats":
             return self.games[-18:]
 
         return self.games[-20:]
@@ -102,7 +102,7 @@ class GetData:
         for wins in raw_response:
             self.array.append(wins.get_text())
         self.wins += self.array
-        if self.league == "comps/20/Bundesliga-Stats":
+        if self.league == "comps/20/Bundesliga-Stats" or self.league == "comps/23/Dutch-Eredivisie-Stats":
             return self.wins[-18:]
 
         return self.wins[-20:]
@@ -112,7 +112,7 @@ class GetData:
         for draws in raw_response:
             self.array.append(draws.get_text())
         self.draws += self.array
-        if self.league == "comps/20/Bundesliga-Stats":
+        if self.league == "comps/20/Bundesliga-Stats" or self.league == "comps/23/Dutch-Eredivisie-Stats":
             return self.draws[-18:]
 
         return self.draws[-20:]
@@ -122,7 +122,7 @@ class GetData:
         for losses in raw_response:
             self.array.append(losses.get_text())
         self.losses += self.array
-        if self.league == "comps/20/Bundesliga-Stats":
+        if self.league == "comps/20/Bundesliga-Stats" or self.league == "comps/23/Dutch-Eredivisie-Stats":
             return self.losses[-18:]
 
         return self.losses[-20:]
@@ -132,7 +132,7 @@ class GetData:
         for gf in raw_response:
             self.array.append(gf.get_text())
         self.goals_for += self.array
-        if self.league == "comps/20/Bundesliga-Stats":
+        if self.league == "comps/20/Bundesliga-Stats" or self.league == "comps/23/Dutch-Eredivisie-Stats":
             return self.goals_for[-18:]
 
         return self.goals_for[-20:]
@@ -142,7 +142,7 @@ class GetData:
         for ga in raw_response:
             self.array.append(ga.get_text())
         self.goals_against += self.array
-        if self.league == "comps/20/Bundesliga-Stats":
+        if self.league == "comps/20/Bundesliga-Stats" or self.league == "comps/23/Dutch-Eredivisie-Stats":
             return self.goals_against[-18:]
 
         return self.goals_against[-20:]
@@ -152,7 +152,7 @@ class GetData:
         for gd in raw_response:
             self.array.append(gd.get_text())
         self.goal_diff += self.array
-        if self.league == "comps/20/Bundesliga-Stats":
+        if self.league == "comps/20/Bundesliga-Stats" or self.league == "comps/23/Dutch-Eredivisie-Stats":
             return self.goal_diff[-18:]
 
         return self.goal_diff[-20:]
@@ -162,7 +162,7 @@ class GetData:
         for top_scorer in raw_response:
             self.array.append(top_scorer.get_text())
         self.top_scorer += self.array
-        if self.league == "comps/20/Bundesliga-Stats":
+        if self.league == "comps/20/Bundesliga-Stats" or self.league == "comps/23/Dutch-Eredivisie-Stats":
             return self.top_scorer[-18:]
 
         return self.top_scorer[-20:]
