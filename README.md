@@ -1,6 +1,6 @@
 # soccer-data-api
 
-An easy to use python web-scrap package that gets json soccer data/stats. All data belongs to https://www.sports-reference.com/
+An easy-to-use python web-scrap package that gets json soccer (football) data/stats. All data belongs to https://www.sports-reference.com/
 
 ## Installation
 
